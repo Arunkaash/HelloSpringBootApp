@@ -1,0 +1,27 @@
+package com.kaash.hellospringbootapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+
+@EnableAutoConfiguration
+@ComponentScan
+public class StarterApp {
+	
+	public static void main(String args[]) {
+		//start application here
+		
+		SpringApplication springApplication = new SpringApplication(StarterApp.class);
+		ConfigurableApplicationContext container = springApplication.run(); //create the container for me
+		College college = container.getBean(College.class);
+		System.out.println("College object i s: "+college);
+		college.printCollegeName();
+		
+	}
+	@Bean
+	public College college() {
+		return new College();
+	}
+}

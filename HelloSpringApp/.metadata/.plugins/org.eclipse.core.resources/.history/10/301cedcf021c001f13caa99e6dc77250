@@ -1,0 +1,3 @@
+  name: Kaash Projects
+server:
+  port: '8080'

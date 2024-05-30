@@ -1,0 +1,26 @@
+package com.kaash.hellospringbootapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+
+@SpringBootApplication
+public class StarterApp {
+	
+	public static void main(String args[]) {
+		//start application here
+		
+//		SpringApplication springApplication = new SpringApplication(StarterApp.class);
+		SpringApplication.run(StarterApp.class,args); //create the container for me
+
+		
+		
+		
+		//		College college = container.getBean(College.class);
+//		System.out.println("College object i s: "+college);
+//		college.printCollegeName();
+		
+	}
+
+}

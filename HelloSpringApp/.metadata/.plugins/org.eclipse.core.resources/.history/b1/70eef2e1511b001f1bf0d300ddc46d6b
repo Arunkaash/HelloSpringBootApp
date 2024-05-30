@@ -1,0 +1,13 @@
+package com.kaash.hellospringbootapp;
+
+import org.springframework.boot.SpringApplication;
+
+public class StarterApp {
+	
+	public static void main(String args) {
+		//start application here
+		
+		SpringApplication springApplication = new SpringApplication(StarterApp.class);
+		springApplication.run();
+	}
+}

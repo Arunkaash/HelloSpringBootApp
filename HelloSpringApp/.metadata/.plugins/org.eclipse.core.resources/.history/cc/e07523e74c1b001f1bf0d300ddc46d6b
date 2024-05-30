@@ -1,0 +1,5 @@
+package hellospringbootapp;
+
+class HelloWorldController {
+
+}
